@@ -14,3 +14,5 @@ your photos and images into stunning diamond paintings.
 We have implemented their visions and developed DAC with an intuitive user interface and comprehensive functionality.
 
 The user interface is available in 3 languages: German, English and French.
+
+This is version 6.4.2.1 of DiamondArtCreator
