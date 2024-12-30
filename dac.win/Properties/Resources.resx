@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="QuestionSavePalettesBeforeClosing" xml:space="preserve">
+    <value>Bisherige Änderungen speichern?</value>
+  </data>
+  <data name="FileSavingToExcelLabel" xml:space="preserve">
+    <value>Speichert Vorlage als Excel-Datei...</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Trash32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trash32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotateLeft24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rotate Left-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Symbol_Speichern1_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Symbol_Speichern1_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchemeColors25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchemeColors-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileMenuName" xml:space="preserve">
+    <value>Datei</value>
+  </data>
+  <data name="color-icons-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color-icons-96.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessagePaletteSavedTo" xml:space="preserve">
+    <value>Farbpalette als Datei {0} gespeichert</value>
+  </data>
+  <data name="Globe32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Globe32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="support1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\support1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchemeWhiteSymbols25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchemeWhiteSymbols-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PNG24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PNG24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImageFile48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImageFile48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HintHomeButtonFeedback" xml:space="preserve">
+    <value>Feedback Email zum Produkt in Standard-Emailprogramm öffnen</value>
+  </data>
+  <data name="FileFilterPDF" xml:space="preserve">
+    <value>PDF Dokument(*.pdf)|*.pdf</value>
+  </data>
+  <data name="RegoWrongInfo" xml:space="preserve">
+    <value>Registrierungsschlüssel passt nicht zum Benutzernamen. Bitte prüfe beides und versuche es erneut.</value>
+  </data>
+  <data name="ErrorSaveSchema" xml:space="preserve">
+    <value>Fehler beim Speichern der Vorlage als Datei.</value>
+  </data>
+  <data name="Refresh32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_Scheme_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save_Scheme_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dice24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dice-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Import32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Import32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fitWidth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fitWidth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Germany" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Germany.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorCannotSaveFile" xml:space="preserve">
+    <value>Kann nicht in gewählte Datei speichern.</value>
+  </data>
+  <data name="tb_zoom_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tb_zoom_in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tb_last" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tb_last.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Undo24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Undo24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDF24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PDF24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileFilterImage" xml:space="preserve">
+    <value>{0} Vorlagenbild (*.{1})|*.{1}</value>
+  </data>
+  <data name="Options_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Options_96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchemeHalfTones25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchemeHalfTones-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JPG48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JPG48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Page32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Page-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialogHintAddNewThread" xml:space="preserve">
+    <value>Wähle neue Farbe um sie zur benutzten Farbpalette hinzuzufügen</value>
+  </data>
+  <data name="WizardLoadSourceImageInsteadOfScheme" xml:space="preserve">
+    <value>Vorlage {0} wurde aus Bild {1} erstellt. Möchtest Du dieses stattdessen verwenden?</value>
+    <comment>{0} - selected scheme file name, {1} - file name of original image.</comment>
+  </data>
+  <data name="PrintPreviewZoomAuto" xml:space="preserve">
+    <value>[Automatisch]</value>
+    <comment>Auto zoom to fit page</comment>
+  </data>
+  <data name="About_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\About_96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlipUD_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlipUD_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="color-icons-32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\color-icons-32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flipRL_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flipRL_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDF_neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PDF_neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Return24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Return-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BankCard24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BankCard24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plus24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plus24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Palette32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Palette32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tb_zoom_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tb_zoom_out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HintHomeButtonRegister" xml:space="preserve">
+    <value>Öffne Registrierungsfenster</value>
+  </data>
+  <data name="PencilTip24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PencilTip24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileFilterImages" xml:space="preserve">
+    <value>Bilddateien|*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.tif;*.tiff;*.dac</value>
+  </data>
+  <data name="reset_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reset_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImageInfoCaption" xml:space="preserve">
+    <value>Vorlageneinstellungen</value>
+  </data>
+  <data name="open_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checked24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checked24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotate_left_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotate_left_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditImage48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditImage48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchemeCross25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchemeCross-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TIF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bobbin24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bobbin24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchemeColoredSymbols25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchemeColoredSymbols-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USA24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\USA24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Key24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Key-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cut24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PNG64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PNG64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoundEtikett" xml:space="preserve">
+    <value>Runde Etiketten Seite </value>
+  </data>
+  <data name="Next24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveAs24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveAs-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegoCancelledRefundedInfo" xml:space="preserve">
+    <value>Registrierschlüssel ungültig. Benutze bitte einen anderen Schlüssel. Sollte ein Fehler vorliegen kontaktiere bitte den Support.</value>
+  </data>
+  <data name="TicTacEtikett" xml:space="preserve">
+    <value>TicTak Etiketten Seite</value>
+  </data>
+  <data name="Back_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Back_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangle24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle Stroked-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Feedback24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Feedback-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paste24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paste24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Export32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Export32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDF32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PDF32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Preview_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Preview_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnsavedImageDescription" xml:space="preserve">
+    <value>Kein Name</value>
+  </data>
+  <data name="Home48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintPageNo" xml:space="preserve">
+    <value>Seite {0} von {1}</value>
+    <comment>Page 1 of Document1</comment>
+  </data>
+  <data name="ErrorSavePdf" xml:space="preserve">
+    <value>Fehler beim Export als PDF-Dokument.</value>
+  </data>
+  <data name="Grid_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grid_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Excel48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excel48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegoThankyou" xml:space="preserve">
+    <value>Vielen Dank, dass Du Diamond Art Creator registriert hast!</value>
+  </data>
+  <data name="FileFilterPalette" xml:space="preserve">
+    <value>Farbpalette (*.thread)|*.thread|Komma-getrennte Datei (*.csv)|*.csv</value>
+  </data>
+  <data name="merge32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\merge32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymbolSpeichern_2_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SymbolSpeichern_2_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LabelVersion" xml:space="preserve">
+    <value>Version: {0}</value>
+  </data>
+  <data name="SchemeFull25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchemeFull-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageNoUpdatesAvailable" xml:space="preserve">
+    <value>Diese Version ist aktuell.</value>
+  </data>
+  <data name="Advance24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Advance-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveAs48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveAs48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlipVertical24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flip Horizontal-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HTTP_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HTTP_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintSavingToPdf" xml:space="preserve">
+    <value>Speichert als PDF</value>
+  </data>
+  <data name="tb_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tb_previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorCheckForUpdates" xml:space="preserve">
+    <value>Fehler beim Prüfen auf Updates. Fehler: {0}</value>
+  </data>
+  <data name="DialogHintSelectBackgroundThread" xml:space="preserve">
+    <value>Wähle eine Farbe um den ausgeschnittenen Bereich zu füllen</value>
+  </data>
+  <data name="Open_Neu_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open_Neu_96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HintOptionsReset" xml:space="preserve">
+    <value>Alle Einstellungen zurücksetzen</value>
+  </data>
+  <data name="WizardLoadImage" xml:space="preserve">
+    <value>Bild laden</value>
+  </data>
+  <data name="FileFilterAllPalettes" xml:space="preserve">
+    <value>Alle Farbpaletten-Dateien (*.thread, *.csv)|*.thread;*.csv</value>
+  </data>
+  <data name="Trash24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trash24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Register_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Register_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Update_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Update_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Twitter24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Twitter-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoftwareBox32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SoftwareBox32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PNG48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PNG481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImageFile24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImageFile24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clear_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveAs_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveAs_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="merge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\merge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LinkedIn24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LinkedIn-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Image24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManagePalettes" xml:space="preserve">
+    <value>Farbpaletten verwalten...</value>
+  </data>
+  <data name="Facebook24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Facebook-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Print_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuestionSaveBeforeClosing" xml:space="preserve">
+    <value>Bisherige Änderungen speichern?</value>
+  </data>
+  <data name="Deckblatt" xml:space="preserve">
+    <value>Deckblatt</value>
+  </data>
+  <data name="FillColor24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FillColor24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HintHomeButtonTwitter" xml:space="preserve">
+    <value>Twitter-Seite zu DAC öffnen</value>
+  </data>
+  <data name="About_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\About_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ColorJoin24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ColorJoin24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JPG24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JPG24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Support32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Support32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circle_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circle_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorCannotOpenFile" xml:space="preserve">
+    <value>Kann ausgewählte Datei nicht öffnen.</value>
+  </data>
+  <data name="LabelsSelectedSymbolsCount" xml:space="preserve">
+    <value>{0} von {1} Symbole ausgewählt</value>
+  </data>
+  <data name="rotate_left_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotate_left_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mail_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mail_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorSelectedPaletteNameAlreadyUsed" xml:space="preserve">
+    <value>Name bereits für andere Farbpalette verwendet.</value>
+  </data>
+  <data name="Downloading24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Downloading-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuestionDeletePalette" xml:space="preserve">
+    <value>Willst Du die Farbpalette wirklich löschen?</value>
+  </data>
+  <data name="register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\register.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="190840551_1425354761190463_3752218376746074022_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\190840551_1425354761190463_3752218376746074022_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Random_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Random_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileFilterThumbnail" xml:space="preserve">
+    <value>{0} Minibild (*.{1})|*.{1}</value>
+  </data>
+  <data name="SaveB48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveB48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Web24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Web-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymbolLaden1_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SymbolLaden1_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thumbnail_Neu_49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thumbnail_Neu_49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open Folder-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ru24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ru24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HintHomeButtonLinkedIn" xml:space="preserve">
+    <value>LinkedIn-Seite des Programmierers öffnen</value>
+  </data>
+  <data name="Checkmark24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checkmark24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Return32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Return-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circle24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circle-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fitPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fitPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="free-trial-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-trial-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checked16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checked16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Page16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Page16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuestionSaveBeforeBackToWizard" xml:space="preserve">
+    <value>Bisherige Änderungen speichern?</value>
+  </data>
+  <data name="ImageInfoTooltip" xml:space="preserve">
+    <value>{0}x{1} Steine, {2} Farben</value>
+  </data>
+  <data name="ErrorCannotDeletePaletteFile" xml:space="preserve">
+    <value>Kann Datei der gewählten Farbpalette nicht löschen.</value>
+  </data>
+  <data name="FileFilterExcel" xml:space="preserve">
+    <value>Excel 2007 Dokument (*.xlsx)|*.xlsx</value>
+  </data>
+  <data name="Wizard_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddFile32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddFile32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JPG64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JPG64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Palette24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Palette24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unchecked16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unchecked16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileFilterSAE" xml:space="preserve">
+    <value>DiamondArtCreator Vorlage(*.dac)|*.dac</value>
+  </data>
+  <data name="Delete24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegoRegisteredTo" xml:space="preserve">
+    <value>Registriert für {0}</value>
+  </data>
+  <data name="CaptionDeletePalette" xml:space="preserve">
+    <value>Lösche Benutzer-Farbpalette</value>
+  </data>
+  <data name="free-trial-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\free-trial-icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Key32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Key32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Redo24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Redo24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileSavingToExcel" xml:space="preserve">
+    <value>Als Excel-Datei speichern</value>
+  </data>
+  <data name="SaeFileDescription" xml:space="preserve">
+    <value>Diamond Art Creator Vorlagendokument</value>
+  </data>
+  <data name="Door16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Door16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlipHorizontal24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flip Vertical-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegoTrialDaysLeft" xml:space="preserve">
+    <value>{0} Tage übrig um das Programm zu testen</value>
+  </data>
+  <data name="ImageInfoLabel" xml:space="preserve">
+    <value>Datei: {0}
+Größe: {1}x{2} Steine
+Größe: {3}x{4} cm
+Farbpalette: {5}
+Farben: {6}</value>
+  </data>
+  <data name="QueryEnterNewPaletteName" xml:space="preserve">
+    <value>Gib einen Namen für die Farbpalette ein:</value>
+  </data>
+  <data name="Preview32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Preview-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hand24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hand24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copy24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JPG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JPG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SchemeSymbols25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SchemeSymbols-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grid_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grid_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InfoRestartToChangeLanguage" xml:space="preserve">
+    <value>Bitte Programm neu starten um die gewählte Sprache zu aktivieren.</value>
+  </data>
+  <data name="support" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\support.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rotate_right_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rotate_right_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditImage100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit Image-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuestionSaveBeforeReturning" xml:space="preserve">
+    <value>Bisherige Änderungen speichern?</value>
+  </data>
+  <data name="Open16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LinkLabelNewVersionAvailable" xml:space="preserve">
+    <value>Neue Version verfügbar...</value>
+  </data>
+  <data name="Rectangle_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegoTrialVersion" xml:space="preserve">
+    <value>Testzeitraum</value>
+  </data>
+  <data name="PDF48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PDF48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorWrongFileFormat" xml:space="preserve">
+    <value>Dateiformat wird nicht unterstützt.</value>
+  </data>
+  <data name="tb_first" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tb_first.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tb_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tb_next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Options_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Options_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Excel_neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excel_neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HintHomeButtonWeb" xml:space="preserve">
+    <value>Homepage von DAC in Standard-Browser öffnen</value>
+  </data>
+  <data name="Xls24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xls24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HintHomeButtonFacebook" xml:space="preserve">
+    <value>Facebook Seite öffnen</value>
+  </data>
+  <data name="Plus32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plus32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copy32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ua24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ua24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CreatePreview" xml:space="preserve">
+    <value>Druckvorschau wird erstellt</value>
+  </data>
+  <data name="Select24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Select24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageSetup_Neu_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageSetup_Neu_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotateRight24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rotate Right-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TIF64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIF64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

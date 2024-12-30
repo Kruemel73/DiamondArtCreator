@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tabPageSourceImage.Text" xml:space="preserve">
+    <value>image source</value>
+  </data>
+  <data name="buttonLoad.Text" xml:space="preserve">
+    <value>Ouvrir</value>
+  </data>
+  <data name="buttonLoad.ToolTip" xml:space="preserve">
+    <value>Charger une image à convertir en modèle</value>
+  </data>
+  <data name="ribbonPanelImage.Text" xml:space="preserve">
+    <value>photo</value>
+  </data>
+  <data name="buttonRotateCCW.Text" xml:space="preserve">
+    <value>Tournez à gauche</value>
+  </data>
+  <data name="buttonRotateCCW.ToolTip" xml:space="preserve">
+    <value>Faire pivoter l'image dans le sens antihoraire</value>
+  </data>
+  <data name="buttonRotateCW.Text" xml:space="preserve">
+    <value>Tournez à droite</value>
+  </data>
+  <data name="buttonRotateCW.ToolTip" xml:space="preserve">
+    <value>Faire pivoter l'image dans le sens des aiguilles d'une montre</value>
+  </data>
+  <data name="buttonFlipH.Text" xml:space="preserve">
+    <value>Inclinez horizontalement</value>
+  </data>
+  <data name="buttonFlipH.ToolTip" xml:space="preserve">
+    <value>Retourner l'image horizontalement (de gauche à droite)</value>
+  </data>
+  <data name="buttonFlipV.Text" xml:space="preserve">
+    <value>Retourner verticalement</value>
+  </data>
+  <data name="buttonFlipV.ToolTip" xml:space="preserve">
+    <value>Retourner l'image verticalement (de haut en bas)</value>
+  </data>
+  <data name="ribbonPanelTransform.Text" xml:space="preserve">
+    <value>transformation</value>
+  </data>
+  <data name="buttonRect.Text" xml:space="preserve">
+    <value>rectangle</value>
+  </data>
+  <data name="buttonRect.ToolTip" xml:space="preserve">
+    <value>Recadre l'image dans une zone rectangulaire</value>
+  </data>
+  <data name="buttonArc.Text" xml:space="preserve">
+    <value>Cercle</value>
+  </data>
+  <data name="buttonArc.ToolTip" xml:space="preserve">
+    <value>Découper une zone elliptique/circulaire</value>
+  </data>
+  <data name="ribbonPanelCrop.Text" xml:space="preserve">
+    <value>recadrer</value>
+  </data>
+  <data name="ribbonButtonImageEdit.Text" xml:space="preserve">
+    <value>Éditer l'image</value>
+  </data>
+  <data name="ribbonPanelEditor.Text" xml:space="preserve">
+    <value>Éditeur de superposition</value>
+  </data>
+  <data name="ribbonTabSourceImage.Text" xml:space="preserve">
+    <value>image source</value>
+  </data>
+  <data name="tabPageResultImage.Text" xml:space="preserve">
+    <value>Modèle prêt</value>
+  </data>
+  <data name="tabPageSymbols.Text" xml:space="preserve">
+    <value>symboles</value>
+  </data>
+  <data name="tabPagePreview.Text" xml:space="preserve">
+    <value>Aperçu du modèle</value>
+  </data>
+  <data name="ribbonCheckBoxSquare.Text" xml:space="preserve">
+    <value>Carré</value>
+  </data>
+  <data name="ribbonCheckBoxRound.Text" xml:space="preserve">
+    <value>Environ</value>
+  </data>
+  <data name="ribbonCheckBoxBuegelperlen.Text" xml:space="preserve">
+    <value>fusible perles</value>
+  </data>
+  <data name="ribbonPanelStones.Text" xml:space="preserve">
+    <value>forme</value>
+  </data>
+  <data name="ribbonPanelBuegelperlen.Text" xml:space="preserve">
+    <value>perles à repasser</value>
+  </data>
+  <data name="ribbonLabelUsedPlates.Text" xml:space="preserve">
+    <value>non. Plaques :</value>
+  </data>
+  <data name="ribbonUpDownPlateHeight.Text" xml:space="preserve">
+    <value>Hauteur</value>
+  </data>
+  <data name="ribbonUpDownPlateWidth.Text" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="ribbonPanelStiftplatten.Text" xml:space="preserve">
+    <value>panneaux perforés de taille</value>
+  </data>
+  <data name="ribbonCheckBoxStones.Text" xml:space="preserve">
+    <value>des pierres</value>
+  </data>
+  <data name="ribbonCheckBoxCM.Text" xml:space="preserve">
+    <value>Cm</value>
+  </data>
+  <data name="ribbonLabelUnit.Text" xml:space="preserve">
+    <value>unité</value>
+  </data>
+  <data name="upDownStitchesPerUnit.Text" xml:space="preserve">
+    <value>pierres par unité</value>
+  </data>
+  <data name="upDownStitchesPerUnit.ToolTip" xml:space="preserve">
+    <value>Nombre de pierres par centimètre</value>
+  </data>
+  <data name="upDownWidth.Text" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="upDownWidth.ToolTip" xml:space="preserve">
+    <value>largeur du modèle</value>
+  </data>
+  <data name="upDownHeight.Text" xml:space="preserve">
+    <value>Hauteur</value>
+  </data>
+  <data name="upDownHeight.ToolTip" xml:space="preserve">
+    <value>hauteur du gabarit</value>
+  </data>
+  <data name="checkBoxFixAspect.Text" xml:space="preserve">
+    <value>Ajuster le rapport de taille</value>
+  </data>
+  <data name="checkBoxFixAspect.ToolTip" xml:space="preserve">
+    <value>Ajuste le format d'image lorsqu'une spécification de taille est modifiée</value>
+  </data>
+  <data name="ribbonPanelSize.Text" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="comboBoxKit.Text" xml:space="preserve">
+    <value>palette de couleurs</value>
+  </data>
+  <data name="comboBoxKit.ToolTip" xml:space="preserve">
+    <value>Palette de couleurs utilisée lors de la création du modèle</value>
+  </data>
+  <data name="upDownMaxColors.Text" xml:space="preserve">
+    <value>Couleurs maximales</value>
+  </data>
+  <data name="upDownMaxColors.ToolTip" xml:space="preserve">
+    <value>Nombre maximum de couleurs à utiliser dans le modèle. Les couleurs réelles utilisées peuvent être inférieures à cette valeur.</value>
+  </data>
+  <data name="ribbonLabelTrulyCount.Text" xml:space="preserve">
+    <value>Couleurs attendues utilisées :</value>
+  </data>
+  <data name="ribbonPanelColors.Text" xml:space="preserve">
+    <value>Couleurs</value>
+  </data>
+  <data name="ribbonTabResultImage.Text" xml:space="preserve">
+    <value>Aperçu l'image</value>
+  </data>
+  <data name="comboBoxResizeFilter.Text" xml:space="preserve">
+    <value>mise au point douce</value>
+  </data>
+  <data name="comboBoxResizeFilter.ToolTip" xml:space="preserve">
+    <value>Filtre de flou</value>
+  </data>
+  <data name="upDownDither.Text" xml:space="preserve">
+    <value>Force du flou</value>
+  </data>
+  <data name="upDownDither.ToolTip" xml:space="preserve">
+    <value>Intensité du flou, qui spécifie la douceur des transitions de couleur affichées.</value>
+  </data>
+  <data name="ribbonPanelAdvImage.Text" xml:space="preserve">
+    <value>photo</value>
+  </data>
+  <data name="comboBoxColorsSubstitute.Text" xml:space="preserve">
+    <value>échanger couleurs</value>
+  </data>
+  <data name="comboBoxColorsSubstitute.ToolTip" xml:space="preserve">
+    <value>Comparaison et échange de couleurs</value>
+  </data>
+  <data name="checkBoxEnsureBlackAndWhite.Text" xml:space="preserve">
+    <value>Ajouter du noir et blanc</value>
+  </data>
+  <data name="checkBoxEnsureBlackAndWhite.ToolTip" xml:space="preserve">
+    <value>Assurez-vous que les couleurs noir et blanc sont utilisées dans une palette réduite</value>
+  </data>
+  <data name="ribbonPanelAdvColor.Text" xml:space="preserve">
+    <value>Couleurs</value>
+  </data>
+  <data name="ribbonTabAdvanced.Text" xml:space="preserve">
+    <value>Avancée</value>
+  </data>
+  <data name="comboBoxSymbols.Text" xml:space="preserve">
+    <value>symboles</value>
+  </data>
+  <data name="comboBoxSymbols.ToolTip" xml:space="preserve">
+    <value>Police d'icône dans le modèle</value>
+  </data>
+  <data name="labelSelectedNo.Text" xml:space="preserve">
+    <value>0 de 0 sélectionné</value>
+  </data>
+  <data name="checkBoxDigits.Text" xml:space="preserve">
+    <value>chiffres</value>
+  </data>
+  <data name="checkBoxDigits.ToolTip" xml:space="preserve">
+    <value>Y compris les chiffres</value>
+  </data>
+  <data name="checkBoxLetters.Text" xml:space="preserve">
+    <value>Des lettres</value>
+  </data>
+  <data name="checkBoxLetters.ToolTip" xml:space="preserve">
+    <value>inclure des lettres</value>
+  </data>
+  <data name="checkBoxSymbols.Text" xml:space="preserve">
+    <value>symboles</value>
+  </data>
+  <data name="checkBoxSymbols.ToolTip" xml:space="preserve">
+    <value>Inclure des symboles</value>
+  </data>
+  <data name="ribbonPanelSymbols.Text" xml:space="preserve">
+    <value>symboles</value>
+  </data>
+  <data name="buttonRandom.Text" xml:space="preserve">
+    <value>Par coïncidence</value>
+  </data>
+  <data name="buttonRandom.ToolTip" xml:space="preserve">
+    <value>Choisissez des symboles aléatoires</value>
+  </data>
+  <data name="buttonClear.Text" xml:space="preserve">
+    <value>À vider</value>
+  </data>
+  <data name="buttonClear.ToolTip" xml:space="preserve">
+    <value>Vider la zone sélectionnée</value>
+  </data>
+  <data name="ribbonPanelSymbolsSelect.Text" xml:space="preserve">
+    <value>Choisir</value>
+  </data>
+  <data name="ribbonButtonSaveSymbols.Text" xml:space="preserve">
+    <value>Enregistrer les icônes</value>
+  </data>
+  <data name="ribbonButtonSaveSymbols.ToolTip" xml:space="preserve">
+    <value>Enregistrer les symboles sélectionnés (S)</value>
+  </data>
+  <data name="ribbonPanel1.Text" xml:space="preserve">
+    <value>symboles</value>
+  </data>
+  <data name="ribbonTabSymbols.Text" xml:space="preserve">
+    <value>symboles</value>
+  </data>
+  <data name="buttonSymbols.Text" xml:space="preserve">
+    <value>symboles</value>
+  </data>
+  <data name="buttonWhiteSymbols.Text" xml:space="preserve">
+    <value>Icônes blanches</value>
+  </data>
+  <data name="buttonColorSymbols.Text" xml:space="preserve">
+    <value>Icônes colorées</value>
+  </data>
+  <data name="buttonHalfTone.Text" xml:space="preserve">
+    <value>demi-teinte</value>
+  </data>
+  <data name="buttonFull.Text" xml:space="preserve">
+    <value>Complètement</value>
+  </data>
+  <data name="buttonColors.Text" xml:space="preserve">
+    <value>Couleurs</value>
+  </data>
+  <data name="buttonCross.Text" xml:space="preserve">
+    <value>Aperçu des pierres</value>
+  </data>
+  <data name="upDownCellSize.Text" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="upDownCellSize.ToolTip" xml:space="preserve">
+    <value>Zoom %</value>
+  </data>
+  <data name="checkBoxRulers.Text" xml:space="preserve">
+    <value>dirigeants</value>
+  </data>
+  <data name="checkBoxRulers.ToolTip" xml:space="preserve">
+    <value>Afficher les règles avec les numéros de colonne et de ligne</value>
+  </data>
+  <data name="checkBoxLines.Text" xml:space="preserve">
+    <value>lignes</value>
+  </data>
+  <data name="checkBoxLines.ToolTip" xml:space="preserve">
+    <value>Afficher les lignes de la grille</value>
+  </data>
+  <data name="ribbonPanelSheme.Text" xml:space="preserve">
+    <value>modèle</value>
+  </data>
+  <data name="ribbonTabPreview.Text" xml:space="preserve">
+    <value>Aperçu du modèle</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Interrompre</value>
+  </data>
+  <data name="buttonNext.Text" xml:space="preserve">
+    <value>Compléter</value>
+  </data>
+  <data name="buttonCm.ToolTip" xml:space="preserve">
+    <value>Spécifiez la taille du modèle en centimètres</value>
+  </data>
+  <data name="buttonInches.ToolTip" xml:space="preserve">
+    <value>Indique la taille en pouces</value>
+  </data>
+  <data name="buttonStitches.ToolTip" xml:space="preserve">
+    <value>Indique la taille en pierres</value>
+  </data>
+  <data name="comboBoxUnits.Text" xml:space="preserve">
+    <value>unité de taille</value>
+  </data>
+  <data name="comboBoxUnits.ToolTip" xml:space="preserve">
+    <value>Unité dans laquelle la taille du modèle est calculée</value>
+  </data>
+  <data name="ribbonPanel2.Text" xml:space="preserve">
+    <value>Éditer l'image</value>
+  </data>
+</root>

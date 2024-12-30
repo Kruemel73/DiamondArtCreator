@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="..\..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props" Condition="Exists('..\..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <LangVersion>12</LangVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7223C73-8B04-4588-A3FA-2F24262DB0B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ravlyk.SAE5.WinForms</RootNamespace>
+    <AssemblyName>DAC</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ReleaseVersion>5.0.1.33</ReleaseVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>D:\TEMP\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>5.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>programm_logo1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>317A20E67504E4874824BD6BE39E1AB118E6AB60</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DAC.Win_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SAE5.Win.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Data.SQLite.EF6.1.0.118.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Data.SQLite.Linq.1.0.118.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppInfo.cs" />
+    <Compile Include="DataHelper.cs" />
+    <Compile Include="Dialogs\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CreateRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateRegister.Designer.cs">
+      <DependentUpon>CreateRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\OpitonsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\OpitonsDialog.Designer.cs">
+      <DependentUpon>OpitonsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\PDFSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PDFSettings.Designer.cs">
+      <DependentUpon>PDFSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\RegisterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RegisterDialog.Designer.cs">
+      <DependentUpon>RegisterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SymbolManagerGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SymbolManagerGeneral.Designer.cs">
+      <DependentUpon>SymbolManagerGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SymbolManagerPerColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SymbolManagerPerColor.Designer.cs">
+      <DependentUpon>SymbolManagerPerColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SymbolsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SymbolsDialog.Designer.cs">
+      <DependentUpon>SymbolsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ThreadsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ThreadsDialog.Designer.cs">
+      <DependentUpon>ThreadsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ThreadsManagementDialogSymbols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ThreadsManagementDialogSymbols.Designer.cs">
+      <DependentUpon>ThreadsManagementDialogSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ThreadsManagementDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ThreadsManagementDialog.Designer.cs">
+      <DependentUpon>ThreadsManagementDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\update.cs" />
+    <Compile Include="Dialogs\UpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\UpdateDialog.Designer.cs">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\webdata.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationHelper.cs" />
+    <Compile Include="Properties\SettingsExtension.cs" />
+    <Compile Include="UserControls\HomeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\HomeUserControl.Designer.cs">
+      <DependentUpon>HomeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ICanClose.cs" />
+    <Compile Include="UserControls\ImageEditor\FilterGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ImageEditor\FilterGrid.designer.cs">
+      <DependentUpon>FilterGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ImageEditor\ImageEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\ImageEditor\ImageEditorDialog.designer.cs">
+      <DependentUpon>ImageEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ImageEditor\ImagePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ImageEditor\ImagePanel.designer.cs">
+      <DependentUpon>ImagePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ImageEditor\Overlay.cs" />
+    <Compile Include="UserControls\PaletteListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\PaletteUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PaletteUserControl.Designer.cs">
+      <DependentUpon>PaletteUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PDFPreview\PDFPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\PDFPreview\PDFPreview.Designer.cs">
+      <DependentUpon>PDFPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PrintUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\PrintUserControl.Designer.cs">
+      <DependentUpon>PrintUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SchemeUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SchemeUserControl.Designer.cs">
+      <DependentUpon>SchemeUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TLLIntegration.cs" />
+    <Compile Include="UserControls\WizardUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WizardUserControl.Designer.cs">
+      <DependentUpon>WizardUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dialogs\AboutDialog.de.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AboutDialog.en-US.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AboutDialog.fr-FR.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateRegister.de.resx">
+      <DependentUpon>CreateRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateRegister.en-US.resx">
+      <DependentUpon>CreateRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateRegister.fr-FR.resx">
+      <DependentUpon>CreateRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateRegister.resx">
+      <DependentUpon>CreateRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\InputDialog.de.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\InputDialog.en-US.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\InputDialog.fr-FR.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OpitonsDialog.de.resx">
+      <DependentUpon>OpitonsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OpitonsDialog.en-US.resx">
+      <DependentUpon>OpitonsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OpitonsDialog.fr-FR.resx">
+      <DependentUpon>OpitonsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OpitonsDialog.resx">
+      <DependentUpon>OpitonsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PDFSettings.de.resx">
+      <DependentUpon>PDFSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PDFSettings.en-US.resx">
+      <DependentUpon>PDFSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PDFSettings.fr-FR.resx">
+      <DependentUpon>PDFSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PDFSettings.resx">
+      <DependentUpon>PDFSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RegisterDialog.de.resx">
+      <DependentUpon>RegisterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RegisterDialog.en-US.resx">
+      <DependentUpon>RegisterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RegisterDialog.fr-FR.resx">
+      <DependentUpon>RegisterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RegisterDialog.resx">
+      <DependentUpon>RegisterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolManagerGeneral.de.resx">
+      <DependentUpon>SymbolManagerGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolManagerGeneral.en-US.resx">
+      <DependentUpon>SymbolManagerGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolManagerGeneral.fr-FR.resx">
+      <DependentUpon>SymbolManagerGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolManagerGeneral.resx">
+      <DependentUpon>SymbolManagerGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolManagerPerColor.de.resx">
+      <DependentUpon>SymbolManagerPerColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolManagerPerColor.en-US.resx">
+      <DependentUpon>SymbolManagerPerColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolManagerPerColor.fr-FR.resx">
+      <DependentUpon>SymbolManagerPerColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolManagerPerColor.resx">
+      <DependentUpon>SymbolManagerPerColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolsDialog.de.resx">
+      <DependentUpon>SymbolsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolsDialog.en-US.resx">
+      <DependentUpon>SymbolsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolsDialog.fr-FR.resx">
+      <DependentUpon>SymbolsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SymbolsDialog.resx">
+      <DependentUpon>SymbolsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsDialog.de.resx">
+      <DependentUpon>ThreadsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsDialog.en-US.resx">
+      <DependentUpon>ThreadsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsDialog.fr-FR.resx">
+      <DependentUpon>ThreadsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsDialog.resx">
+      <DependentUpon>ThreadsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsManagementDialog.fr-FR.resx">
+      <DependentUpon>ThreadsManagementDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsManagementDialogSymbols.de.resx">
+      <DependentUpon>ThreadsManagementDialogSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsManagementDialogSymbols.en-US.resx">
+      <DependentUpon>ThreadsManagementDialogSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsManagementDialogSymbols.fr-FR.resx">
+      <DependentUpon>ThreadsManagementDialogSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsManagementDialogSymbols.resx">
+      <DependentUpon>ThreadsManagementDialogSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsManagementDialog.de.resx">
+      <DependentUpon>ThreadsManagementDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsManagementDialog.en-US.resx">
+      <DependentUpon>ThreadsManagementDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ThreadsManagementDialog.resx">
+      <DependentUpon>ThreadsManagementDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\UpdateDialog.de.resx">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\UpdateDialog.en-US.resx">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\UpdateDialog.fr-FR.resx">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\UpdateDialog.resx">
+      <DependentUpon>UpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.de.resx" />
+    <EmbeddedResource Include="Properties\Resources.en-US.resx" />
+    <EmbeddedResource Include="Properties\Resources.fr-FR.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomeUserControl.de.resx">
+      <DependentUpon>HomeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomeUserControl.en-US.resx">
+      <DependentUpon>HomeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomeUserControl.fr-FR.resx">
+      <DependentUpon>HomeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\HomeUserControl.resx">
+      <DependentUpon>HomeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\FilterGrid.de.resx">
+      <DependentUpon>FilterGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\FilterGrid.en-US.resx">
+      <DependentUpon>FilterGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\FilterGrid.fr-FR.resx">
+      <DependentUpon>FilterGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\FilterGrid.resx">
+      <DependentUpon>FilterGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\ImageEditorDialog.de.resx">
+      <DependentUpon>ImageEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\ImageEditorDialog.en-US.resx">
+      <DependentUpon>ImageEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\ImageEditorDialog.fr-FR.resx">
+      <DependentUpon>ImageEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\ImageEditorDialog.resx">
+      <DependentUpon>ImageEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\ImagePanel.de.resx">
+      <DependentUpon>ImagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\ImagePanel.en-US.resx">
+      <DependentUpon>ImagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\ImagePanel.fr-FR.resx">
+      <DependentUpon>ImagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageEditor\ImagePanel.resx">
+      <DependentUpon>ImagePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PaletteUserControl.de.resx">
+      <DependentUpon>PaletteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PaletteUserControl.en-US.resx">
+      <DependentUpon>PaletteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PaletteUserControl.fr-FR.resx">
+      <DependentUpon>PaletteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PaletteUserControl.resx">
+      <DependentUpon>PaletteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PDFPreview\PDFPreview.de.resx">
+      <DependentUpon>PDFPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PDFPreview\PDFPreview.en-US.resx">
+      <DependentUpon>PDFPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PDFPreview\PDFPreview.fr-FR.resx">
+      <DependentUpon>PDFPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PDFPreview\PDFPreview.resx">
+      <DependentUpon>PDFPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\PrintUserControl.resx">
+      <DependentUpon>PrintUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SchemeUserControl.de.resx">
+      <DependentUpon>SchemeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SchemeUserControl.en-US.resx">
+      <DependentUpon>SchemeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SchemeUserControl.fr-FR.resx">
+      <DependentUpon>SchemeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SchemeUserControl.resx">
+      <DependentUpon>SchemeUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WizardUserControl.de.resx">
+      <DependentUpon>WizardUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WizardUserControl.en-US.resx">
+      <DependentUpon>WizardUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WizardUserControl.fr-FR.resx">
+      <DependentUpon>WizardUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WizardUserControl.resx">
+      <DependentUpon>WizardUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filters.gzip" />
+    <None Include="DAC.Win_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ravlyk.Adopted\Ravlyk.Adopted.TrueTypeSharp\Ravlyk.Adopted.TrueTypeSharp.csproj">
+      <Project>{b722113f-1252-4be1-9d43-6bc82b3e37d1}</Project>
+      <Name>Ravlyk.Adopted.TrueTypeSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk.SAE\Ravlyk.SAE.Drawing\Ravlyk.SAE.Drawing.csproj">
+      <Project>{ff5acb03-4a97-4cc3-a5b2-1c7788c70257}</Project>
+      <Name>Ravlyk.SAE.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk.SAE\Ravlyk.SAE.Resources\Ravlyk.SAE.Resources.csproj">
+      <Project>{e0e75fe8-a1df-4287-b351-f55d3722a2c1}</Project>
+      <Name>Ravlyk.SAE.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk.UI\Ravlyk.Drawing.WinForms\DAC.Drawing.WinForms.csproj">
+      <Project>{b03f57fa-ff3a-4a48-bad9-2b44c57adacf}</Project>
+      <Name>DAC.Drawing.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk.UI\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon35.csproj">
+      <Project>{46a18a55-5ae8-49ce-91cd-c7421b642e7e}</Project>
+      <Name>System.Windows.Forms.Ribbon35</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk\Ravlyk.Common\Ravlyk.Common.csproj">
+      <Project>{5c554a7e-24f7-46da-b65d-4fc4cb132547}</Project>
+      <Name>Ravlyk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk\Ravlyk.Drawing.ImageProcessor\Ravlyk.Drawing.ImageProcessor.csproj">
+      <Project>{5887536a-1af1-4d42-acf9-1e41eec1c9b5}</Project>
+      <Name>Ravlyk.Drawing.ImageProcessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk\Ravlyk.Drawing\Ravlyk.Drawing.csproj">
+      <Project>{846aa919-e96f-46f3-973b-60f5adbf8f42}</Project>
+      <Name>Ravlyk.Drawing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Files\" />
+    <Folder Include="Samples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UserControls\ImageEditor\Images\background.png" />
+    <None Include="Resources\chunk.chunk" />
+    <None Include="Resources\DAC6Chunck.chunk" />
+    <None Include="Resources\Edit Image-100.png" />
+    <None Include="Resources\Open Folder-100.png" />
+    <None Include="Resources\Rotate Left-24.png" />
+    <None Include="Resources\Rotate Right-24.png" />
+    <None Include="Resources\Flip Horizontal-24.png" />
+    <None Include="Resources\Flip Vertical-24.png" />
+    <None Include="Resources\Rectangle Stroked-24.png" />
+    <None Include="Resources\Circle-24.png" />
+    <None Include="Resources\Previous-24.png" />
+    <None Include="Resources\Next-24.png" />
+    <None Include="Resources\Dice-24.png" />
+    <None Include="Resources\Delete-24.png" />
+    <None Include="Resources\Save-48.png" />
+    <None Include="Resources\Print-48.png" />
+    <None Include="Resources\Web-24.png" />
+    <None Include="Resources\Feedback-24.png" />
+    <None Include="Resources\Facebook-24.png" />
+    <None Include="Resources\Twitter-24.png" />
+    <None Include="Resources\LinkedIn-24.png" />
+    <None Include="Resources\Key-24.png" />
+    <None Include="Resources\Home-48.png" />
+    <None Include="Resources\Return-32.png" />
+    <None Include="Resources\Page-32.png" />
+    <None Include="Resources\Preview-32.png" />
+    <None Include="Resources\Print-32.png" />
+    <None Include="Resources\Return-24.png" />
+    <None Include="Resources\Advance-24.png" />
+    <None Include="Resources\Open-32.png" />
+    <None Include="Resources\SaveAs-24.png" />
+    <None Include="Resources\Downloading-24.png" />
+    <None Include="Resources\SchemeSymbols-25.png" />
+    <None Include="Resources\SchemeColoredSymbols-25.png" />
+    <None Include="Resources\SchemeColors-25.png" />
+    <None Include="Resources\SchemeCross-25.png" />
+    <None Include="Resources\SchemeFull-25.png" />
+    <None Include="Resources\SchemeHalfTones-25.png" />
+    <None Include="Resources\SchemeWhiteSymbols-25.png" />
+    <None Include="Resources\Globe32.png" />
+    <None Include="Resources\USA24.png" />
+    <None Include="Resources\Ru24.png" />
+    <None Include="Resources\Ua24.png" />
+    <None Include="Resources\PDF32.png" />
+    <None Include="Resources\PDF24.png" />
+    <None Include="Resources\Undo24.png" />
+    <None Include="Resources\Redo24.png" />
+    <None Include="Resources\Hand24.png" />
+    <None Include="Resources\PencilTip24.png" />
+    <None Include="Resources\FillColor24.png" />
+    <None Include="Resources\Checked24.png" />
+    <None Include="Resources\Checked16.png" />
+    <None Include="Resources\Unchecked16.png" />
+    <None Include="Resources\Palette24.png" />
+    <None Include="Resources\Trash24.png" />
+    <None Include="Resources\Plus24.png" />
+    <None Include="Resources\ColorJoin24.png" />
+    <None Include="Resources\Checkmark24.png" />
+    <None Include="Resources\BankCard24.png" />
+    <None Include="Resources\Key32.png" />
+    <None Include="Resources\Home32.png" />
+    <None Include="Resources\Save32.png" />
+    <None Include="Resources\Save24.png" />
+    <None Include="Resources\Door16.png" />
+    <None Include="Resources\Info32.png" />
+    <None Include="Resources\Support32.png" />
+    <None Include="Resources\SoftwareBox32.png" />
+    <None Include="Resources\Refresh24.png" />
+    <None Include="Resources\PNG24.png" />
+    <None Include="Resources\JPG24.png" />
+    <None Include="Resources\Image24.png" />
+    <None Include="Resources\EditImage48.png" />
+    <None Include="Resources\Open16.png" />
+    <None Include="Resources\Refresh32.png" />
+    <None Include="Resources\AddFile32.png" />
+    <None Include="Resources\Copy32.png" />
+    <None Include="Resources\Trash32.png" />
+    <None Include="Resources\Import32.png" />
+    <None Include="Resources\Export32.png" />
+    <None Include="Resources\Plus32.png" />
+    <None Include="Resources\Bobbin24.png" />
+    <None Include="Resources\SaveB48.png" />
+    <None Include="Resources\Copy24.png" />
+    <None Include="Resources\Cut24.png" />
+    <None Include="Resources\Paste24.png" />
+    <None Include="Resources\Select24.png" />
+    <None Include="Resources\Palette32.png" />
+    <None Include="Resources\Page16.png" />
+    <None Include="Resources\ImageFile24.png" />
+    <None Include="Resources\Xls24.png" />
+    <None Include="Resources\Germany.png" />
+    <None Include="Resources\JPG48.png" />
+    <None Include="Resources\ImageFile48.png" />
+    <None Include="Resources\PDF48.png" />
+    <None Include="Resources\Excel48.png" />
+    <None Include="Resources\PDF_neu_48.png" />
+    <None Include="Resources\Excel_neu_48.png" />
+    <None Include="Resources\Home_Neu_48.png" />
+    <None Include="Resources\Options_Neu_48.png" />
+    <None Include="Resources\New_Neu_48.png" />
+    <None Include="Resources\Open_Neu_96.png" />
+    <None Include="Resources\About_48.png" />
+    <None Include="Resources\HTTP_48.png" />
+    <None Include="Resources\Mail_48.png" />
+    <None Include="Resources\Options_96.png" />
+    <None Include="Resources\open_32.png" />
+    <None Include="Resources\ok_32.png" />
+    <None Include="Resources\open_321.png" />
+    <None Include="Resources\flipRL_32.png" />
+    <None Include="Resources\FlipUD_32.png" />
+    <None Include="Resources\Circle_32.png" />
+    <None Include="Resources\clear_32.png" />
+    <Content Include="programm_logo.ico" />
+    <None Include="Resources\Grid_32.png" />
+    <Content Include="programm_logo1.ico" />
+    <None Include="Resources\190840551_1425354761190463_3752218376746074022_n.jpg" />
+    <None Include="Resources\color-icons-96.jpg" />
+    <None Include="Resources\free-trial-icon.jpg" />
+    <None Include="Resources\About_96.png" />
+    <None Include="Resources\color-icons-32.jpg" />
+    <None Include="Resources\fitPage.png" />
+    <None Include="Resources\fitWidth.png" />
+    <None Include="Resources\Grid_48.png" />
+    <None Include="Resources\PNG48.png" />
+    <None Include="Resources\SaveAs48.png" />
+    <None Include="Resources\PNG481.png" />
+    <None Include="Resources\Save_Neu_48.png" />
+    <None Include="Resources\SaveAs_Neu_48.png" />
+    <None Include="Resources\Thumbnail_Neu_49.png" />
+    <None Include="Resources\Save_Scheme_Neu_48.png" />
+    <None Include="Resources\Wizard_Neu_48.png" />
+    <None Include="Resources\Register_48.png" />
+    <None Include="Resources\Update_48.png" />
+    <None Include="Resources\reset_32.png" />
+    <None Include="Resources\rotate_left_48.png" />
+    <None Include="Resources\rotate_left_32.png" />
+    <None Include="Resources\rotate_right_32.png" />
+    <None Include="Resources\Rectangle_32.png" />
+    <None Include="Resources\Random_32.png" />
+    <None Include="Resources\SymbolLaden1_32.png" />
+    <None Include="Resources\Symbol_Speichern1_32.png" />
+    <None Include="Resources\SymbolSpeichern_2_32.png" />
+    <None Include="Resources\register.jpg" />
+    <None Include="Resources\support1.png" />
+    <None Include="Resources\support.png" />
+    <None Include="Resources\tb_last.png" />
+    <None Include="Resources\tb_next.png" />
+    <None Include="Resources\tb_previous.png" />
+    <None Include="Resources\tb_first.png" />
+    <None Include="Resources\tb_zoom_in.png" />
+    <None Include="Resources\tb_zoom_out.png" />
+    <None Include="Resources\ShadeBorder-E.png" />
+    <None Include="Resources\ShadeBorder-N.png" />
+    <None Include="Resources\ShadeBorder-NE.png" />
+    <None Include="Resources\ShadeBorder-NW.png" />
+    <None Include="Resources\ShadeBorder-S.png" />
+    <None Include="Resources\ShadeBorder-SE.png" />
+    <None Include="Resources\ShadeBorder-SW.png" />
+    <None Include="Resources\ShadeBorder-W.png" />
+    <None Include="Resources\JPG.png" />
+    <None Include="Resources\PNG.png" />
+    <None Include="Resources\TIF.png" />
+    <None Include="Resources\JPG64.png" />
+    <None Include="Resources\PNG64.png" />
+    <None Include="Resources\TIF64.png" />
+    <Content Include="thimble.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\build\PdfiumViewer.Native.x86_64.v8-xfa.props'))" />
+    <Error Condition="!Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.118.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

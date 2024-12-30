@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\Build\PdfiumViewer.Native.x86_64.v8-xfa.props" Condition="Exists('..\..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\Build\PdfiumViewer.Native.x86_64.v8-xfa.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B03F57FA-FF3A-4A48-BAD9-2B44C57ADACF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ravlyk.Drawing.WinForms</RootNamespace>
+    <AssemblyName>DAC.Drawing.WinForms</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ReleaseVersion>5.0.1.33</ReleaseVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\Debug\DAC.Drawing.WinForms.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PdfiumViewer, Version=2.13.0.0, Culture=neutral, PublicKeyToken=91e4789cfb0609e0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClipboardMonitor.cs" />
+    <Compile Include="CollapsiblePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CollapsiblePanel.Designer.cs">
+      <DependentUpon>CollapsiblePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CollapsibleSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlUtilities.cs" />
+    <Compile Include="CustomCursorHelper.cs" />
+    <Compile Include="FlatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FontHelper.cs" />
+    <Compile Include="ImageDataObject.cs" />
+    <Compile Include="IndexedImageExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SAEWizard.cs" />
+    <Compile Include="ScrollControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ScrollControl.Designer.cs">
+      <DependentUpon>ScrollControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SortableBindingList.cs" />
+    <Compile Include="TabControlWoTabs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VisualControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZoomImageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZoomImageBox.Designer.cs">
+      <DependentUpon>ZoomImageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZoomSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZoomSlider.Designer.cs">
+      <DependentUpon>ZoomSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZoomSliderEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZoomSliderEx.Designer.cs">
+      <DependentUpon>ZoomSliderEx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ravlyk.Adopted\Ravlyk.Adopted.TrueTypeSharp\Ravlyk.Adopted.TrueTypeSharp.csproj">
+      <Project>{b722113f-1252-4be1-9d43-6bc82b3e37d1}</Project>
+      <Name>Ravlyk.Adopted.TrueTypeSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk.SAE\Ravlyk.SAE.Drawing\Ravlyk.SAE.Drawing.csproj">
+      <Project>{FF5ACB03-4A97-4CC3-A5B2-1C7788C70257}</Project>
+      <Name>Ravlyk.SAE.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk.SAE\Ravlyk.SAE.Resources\Ravlyk.SAE.Resources.csproj">
+      <Project>{e0e75fe8-a1df-4287-b351-f55d3722a2c1}</Project>
+      <Name>Ravlyk.SAE.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk\Ravlyk.Common\Ravlyk.Common.csproj">
+      <Project>{5C554A7E-24F7-46DA-B65D-4FC4CB132547}</Project>
+      <Name>Ravlyk.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk\Ravlyk.Drawing.ImageProcessor\Ravlyk.Drawing.ImageProcessor.csproj">
+      <Project>{5887536A-1AF1-4D42-ACF9-1E41EEC1C9B5}</Project>
+      <Name>Ravlyk.Drawing.ImageProcessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Ravlyk\Ravlyk.Drawing\Ravlyk.Drawing.csproj">
+      <Project>{846AA919-E96F-46F3-973B-60F5ADBF8F42}</Project>
+      <Name>Ravlyk.Drawing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CollapsiblePanel.resx">
+      <DependentUpon>CollapsiblePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.de.resx" />
+    <EmbeddedResource Include="Properties\Resources.en-US.resx" />
+    <EmbeddedResource Include="Properties\Resources.fr-FR.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScrollControl.resx">
+      <DependentUpon>ScrollControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualControl.resx">
+      <DependentUpon>VisualControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZoomImageBox.resx">
+      <DependentUpon>ZoomImageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZoomSlider.resx">
+      <DependentUpon>ZoomSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZoomSliderEx.resx">
+      <DependentUpon>ZoomSliderEx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Down16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SchemeColoredSymbols-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SchemeColors-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SchemeCross-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SchemeFull-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SchemeHalfTones-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SchemeSymbols-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SchemeWhiteSymbols-25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\Build\PdfiumViewer.Native.x86_64.v8-xfa.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\Build\PdfiumViewer.Native.x86_64.v8-xfa.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
